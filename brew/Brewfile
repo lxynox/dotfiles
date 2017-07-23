@@ -1,0 +1,56 @@
+#
+#   ____                     __ _ _
+#  | __ ) _ __ _____      __/ _(_) | ___
+#  |  _ \| '__/ _ \ \ /\ / / |_| | |/ _ \
+#  | |_) | | |  __/\ V  V /|  _| | |  __/
+#  |____/|_|  \___| \_/\_/ |_| |_|_|\___|
+#
+
+# Reference: https://github.com/Homebrew/homebrew-bundle
+# https://github.com/Homebrew
+
+cask_args appdir: '/Applications'
+
+tap 'homebrew/bundle'
+tap 'homebrew/science'
+
+# brew install <package>
+brew 'cmake'
+brew 'ctags'
+brew 'git'
+brew 'mongodb'
+brew 'mysql'
+brew 'node'
+brew 'openssl'
+brew 'python'
+brew 'python3'
+brew 'ruby'
+brew 'readline'
+brew 'tree'
+brew 'zsh'
+brew 'yarn'
+brew 'tmux'
+brew 'ccat'
+brew 'diff-so-fancy'
+brew 'wget'
+# shell startup greetings
+brew 'cowsay'
+brew 'fortune'
+
+# http://brew.sh/homebrew-science/
+tap 'caskroom/cask'
+
+# https://caskroom.github.io/
+cask 'spotify'
+cask 'filezilla'
+cask 'skype'
+cask 'slack'
+cask 'hyper'
+cask 'alfred'
+cask 'dropbox'
+cask 'atom'
+cask 'opera'
+cask 'firefox'
+cask 'chromium'
+cask 'google-chrome'
+
