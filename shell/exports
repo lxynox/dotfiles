@@ -1,0 +1,19 @@
+# (System)
+export HOST=🐳
+export SHELL=/usr/local/bin/zsh
+export LANG=en_US.UTF-8
+
+# (Homes)
+export DEV_HOME=$HOME/dev
+export WORK_HOME=$DEV_HOME/work
+export DOT_HOME=$HOME/.dotfiles
+
+export CATALINA_HOME=/Library/Tomcat
+export JAVA_HOME=$(/usr/libexec/java_home)
+export MYSQL_HOME=/usr/local/mysql
+export BREW_INSTALL_HOME=/usr/local/Cellar
+export PIP_INSTALL_HOME=/usr/local/lib/python2.7/site-packages
+
+# (Python virtual env)
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/vDev

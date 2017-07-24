@@ -1,0 +1,28 @@
+# (Cds)
+alias dot="cd $DOT_HOME"
+alias tmp="cd /tmp"
+alias dev="cd $DEV_HOME"
+alias work="cd $DEV_HOME/work"
+alias code="cd $DEV_HOME/code"
+alias fork="cd $DEV_HOME/fork"
+
+# (Git)
+alias g="git"
+alias g-="git checkout -"
+
+# (Editing)
+alias vi="vim"
+alias zshrc="vi ~/.zshrc"
+alias omz="vi ~/.oh-my-zsh"
+
+# (Cli)
+alias cat="ccat"
+alias cra="create-react-app"
+alias rn="react-native"
+alias h="history"
+
+# (Elm)
+alias elmr="elm-repl"
+alias elmm="elm-make"
+alias epm="elm-package"
+

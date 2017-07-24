@@ -1,0 +1,47 @@
+#
+#     _________  _   _ ____   ____
+#    |__  / ___|| | | |  _ \ / ___|
+#      / /\___ \| |_| | |_) | |
+#   _ / /_ ___) |  _  |  _ <| |___
+#  (_)____|____/|_| |_|_| \_\\____|
+#
+
+DIR="$HOME/.dotfiles/shell"
+
+fortune | cowsay -f www #| lolcat
+
+# envs
+source $DIR/exports
+source $DIR/paths
+source $DIR/aliases
+source $DIR/work
+
+# oh-my-zsh (zsh plugin manager: https://github.com/robbyrussell/oh-my-zsh)
+# (general)
+export ZSH=$HOME/.oh-my-zsh
+export UPDATE_ZSH_DAYS=15
+export MANPATH="/usr/local/man:$MANPATH"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+HIST_STAMPS="mm/dd/yyyy"                        # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+
+# (theme)
+# [ editing # Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_CUSTOM=$DOT_HOME/shell/custom
+ZSH_THEME=""
+
+# (plugins)
+# Plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git brew npm node zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+
+# pure (command prompt ui: https://github.com/sindresorhus/pure#install)
+autoload -U promptinit
+promptinit
+prompt pure
+

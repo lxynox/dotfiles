@@ -1,0 +1,16 @@
+# Function path (zsh)
+fpath=(
+  $fpath
+	~/.zfunctions
+  /usr/local/share/zsh/site-functions
+)
+
+# Path
+PATH=$HOME/.rvm/bin:$PATH
+PATH=$HOME/.rvm/gems/ruby-2.3.1/bin:$PATH
+PATH=$CATALINA_HOME/bin:$PATH
+PATH=$MYSQL_HOME/bin:$PATH
+export PATH
+
+# Uncommented below when screwed up
+# PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
