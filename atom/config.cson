@@ -50,14 +50,14 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "spacegray-light-neue-ui"
-      "one-light-syntax"
+      "atom-material-ui"
+      "apex-syntax"
     ]
     titleBar: "custom"
   editor:
     autoIndentOnPaste: false
     fontFamily: "Consolas, Fira Code, Menlo"
-    fontSize: 11
+    fontSize: 12
     invisibles:
       eol: "↩"
       space: " "

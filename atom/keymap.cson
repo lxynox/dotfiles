@@ -43,3 +43,9 @@
 	'ctrl-o': 'cursor-history:prev'
 	'ctrl-cmd-i': 'cursor-history:next-within-editor'
 	'ctrl-cmd-o': 'cursor-history:prev-within-editor'
+	
+# tern.js
+'atom-text-editor[data-grammar~=js]':
+  'g d': 'atom-ternjs:definition'
+  'g r': 'atom-ternjs:references'
+  'alt-o': 'atom-ternjs:documentation'
