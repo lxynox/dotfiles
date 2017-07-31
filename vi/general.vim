@@ -1,0 +1,62 @@
+syntax on
+set listchars=tab:▸\ ,trail:•,eol:¬ "☠
+set nolist
+set number
+set relativenumber
+set columns=88
+set lines=40
+set encoding=utf-8
+set clipboard=unnamed
+set showmatch
+set showcmd
+set tw=0
+set background=light
+colorscheme default
+" set cursorline, cursorcolumn
+
+" (Swap Files)
+set noswapfile
+set nobackup
+set nowb
+
+" (Indentation)
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
+nmap <leader>T :set noexpandtab tabstop=2 softtabstop=2 shiftwidth=2<CR>
+nmap <leader>t :set expandtab tabstop=2 shiftwidth=2 softtabstop=2<CR>
+
+" (Completion)
+"set wildmode=list:longest
+set wildmenu                                  " enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~                   " stuff to ignore when tab completing
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
+set wildignore+=*/build/**
+set wildignore+=*/node_modules/**
+set wildignore+=*/dist/**
+set wildignore+=*/.svn/**
+set wildignore+=*/.git/**
+
+" (Scrolling)
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
+
+" (Search)
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+" 

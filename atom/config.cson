@@ -64,7 +64,6 @@
     showIndentGuide: true
     softTabs: false
     softWrapAtPreferredLineLength: true
-    tabType: "hard"
   "exception-reporting":
     userId: "69e968d8-39f3-7542-7e4d-7358c28fd32d"
   "git-plus":
@@ -109,6 +108,7 @@
       "atom-material-ui base16-tomorrow-light-theme"
     ]
   "tree-view":
+    hideVcsIgnoredFiles: true
     showOnRightSide: true
   "vim-mode-plus":
     flashOnOperate: false

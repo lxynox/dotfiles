@@ -35,17 +35,13 @@
 
 # vim-mode-plus
 'atom-text-editor.vim-mode-plus.normal-mode':
-	'y s': 'vim-mode-plus:surround'
+	'y s': 'vim-mode-plus:surround-smart-word'
 	'd s': 'vim-mode-plus:delete-surround'
 	'c s': 'vim-mode-plus:change-surround'
 	'ctrl-l': 'vim-mode-plus:clear-highlight-search'
 	'ctrl-i': 'cursor-history:next'
 	'ctrl-o': 'cursor-history:prev'
-	'ctrl-cmd-i': 'cursor-history:next-within-editor'
-	'ctrl-cmd-o': 'cursor-history:prev-within-editor'
-	
-# tern.js
-'atom-text-editor[data-grammar~=js]':
-  'g d': 'atom-ternjs:definition'
-  'g r': 'atom-ternjs:references'
-  'alt-o': 'atom-ternjs:documentation'
+	# tern
+	'g d': 'atom-ternjs:definition'
+	'g r': 'atom-ternjs:references'
+	'alt-o': 'atom-ternjs:documentation'

@@ -1,0 +1,14 @@
+" __   _(_)_ __ ___  _ __ ___
+" \ \ / / | '_ ` _ \| '__/ __|
+"  \ V /| | | | | | | | | (__
+" (_)_/ |_|_| |_| |_|_|  \___|
+
+let mapleader = ","
+let maplocalleader = ","
+
+let vim_home = "~/.dotfiles/vi"
+exec "so" . vim_home . "/vundles.vim"
+exec "so" . vim_home . "/general.vim"
+exec "so" . vim_home . "/keymap.vim"
+exec "so" . vim_home . "/settings.vim"
+
