@@ -6,6 +6,8 @@ fpath=(
 )
 
 # Path
+PATH=$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/tools/bin:$HOME/Library/Android/sdk/platform-tools:$PATH
+PATH=$JAVA_HOME/bin:$PATH
 PATH=$HOME/.rvm/bin:$PATH
 PATH=$HOME/.rvm/gems/ruby-2.3.1/bin:$PATH
 PATH=$CATALINA_HOME/bin:$PATH

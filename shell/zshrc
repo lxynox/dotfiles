@@ -8,15 +8,11 @@
 
 DIR="$HOME/.dotfiles/shell"
 
-fortune | cowsay -f www #| lolcat
-
-# envs
+# Envs
 source $DIR/exports
 source $DIR/paths
-source $DIR/aliases
-source $DIR/work
 
-# oh-my-zsh (zsh plugin manager: https://github.com/robbyrussell/oh-my-zsh)
+# Oh-my-zsh (zsh plugin manager: https://github.com/robbyrussell/oh-my-zsh)
 # (general)
 export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=15
@@ -24,7 +20,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-HIST_STAMPS="mm/dd/yyyy"                        # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+HIST_STAMPS="mm/dd/yyyy"
 
 # (theme)
 # [ editing # Look in ~/.oh-my-zsh/themes/
@@ -45,3 +41,9 @@ autoload -U promptinit
 promptinit
 prompt pure
 
+
+# Custom
+fortune | cowsay -f www | lolcat
+
+source $DIR/aliases
+source $DIR/work

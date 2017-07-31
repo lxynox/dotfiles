@@ -12,6 +12,8 @@ alias g-="git checkout -"
 
 # (Editing)
 alias vi="vim"
+alias v="vi"
+alias e="vi"
 alias zshrc="vi ~/.zshrc"
 alias omz="vi ~/.oh-my-zsh"
 
@@ -20,9 +22,13 @@ alias cat="ccat"
 alias cra="create-react-app"
 alias rn="react-native"
 alias h="history"
+alias ss="source ~/.zshrc"
 
 # (Elm)
 alias elmr="elm-repl"
 alias elmm="elm-make"
 alias epm="elm-package"
 
+# (Ruby)
+alias be="bundle exec"
+alias bi="bundle install"
