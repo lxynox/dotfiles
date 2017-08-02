@@ -1,16 +1,16 @@
-#
 #     _________  _   _ ____   ____
 #    |__  / ___|| | | |  _ \ / ___|
 #      / /\___ \| |_| | |_) | |
 #   _ / /_ ___) |  _  |  _ <| |___
 #  (_)____|____/|_| |_|_| \_\\____|
-#
 
 DIR="$HOME/.dotfiles/shell"
+
 
 # Envs
 source $DIR/exports
 source $DIR/paths
+
 
 # Oh-my-zsh (zsh plugin manager: https://github.com/robbyrussell/oh-my-zsh)
 # (general)
@@ -23,7 +23,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="mm/dd/yyyy"
 
 # (theme)
-# [ editing # Look in ~/.oh-my-zsh/themes/
+# Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_CUSTOM=$DOT_HOME/shell/custom
@@ -36,7 +36,8 @@ ZSH_THEME=""
 plugins=(git brew npm node zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
-# pure (command prompt ui: https://github.com/sindresorhus/pure#install)
+
+# Pure (command prompt ui: https://github.com/sindresorhus/pure#install)
 autoload -U promptinit
 promptinit
 prompt pure
