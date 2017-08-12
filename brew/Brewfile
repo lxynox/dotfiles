@@ -33,6 +33,7 @@ brew 'tmux'
 brew 'ccat'
 brew 'diff-so-fancy'
 brew 'wget'
+brew 'sl'
 # shell startup greetings
 brew 'cowsay'
 brew 'fortune'

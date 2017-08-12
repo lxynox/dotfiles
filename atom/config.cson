@@ -40,7 +40,6 @@
     classpathFilePath: "."
   "autocomplete-plus": {}
   core:
-    automaticallyUpdate: false
     disabledPackages: [
       "minimap"
       "whitespace"
@@ -58,11 +57,10 @@
     fontFamily: "Consolas, Fira Code, Menlo"
     fontSize: 12
     invisibles:
-      eol: "↩"
-      space: " "
-      tab: "❯"
-    showIndentGuide: true
+      eol: "☕"
+      space: "-"
     softTabs: false
+    softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "69e968d8-39f3-7542-7e4d-7358c28fd32d"
@@ -76,7 +74,6 @@
   "linter-eslint": {}
   "linter-ui-default":
     panelHeight: 81
-    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
@@ -95,10 +92,13 @@
     darkProfiles: [
       "atom-material-ui atom-material-syntax"
       "one-dark-ui one-dark-syntax"
+      "two-light-ui atom-material-syntax"
     ]
     lightProfiles: [
       "spacegray-light-neue-ui one-light-syntax"
       "one-light-ui one-light-syntax"
+      "atom-material-ui apex-syntax"
+      "two-light-ui apex-syntax"
     ]
     profiles: [
       "atom-material-ui one-light-syntax"

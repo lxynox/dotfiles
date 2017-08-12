@@ -29,9 +29,11 @@
 
 'atom-workspace':
 	'alt-p': 'pane:split-down'
+	'alt-i': 'window:toggle-invisibles'
 
 'atom-workspace:not([mini])':
-	'f5': 'theme-switch:next'
+	'f5': 'theme-switch:next-light'
+	'shift-f5': 'theme-switch:next-dark'
 
 # vim-mode-plus
 'atom-text-editor.vim-mode-plus.normal-mode':

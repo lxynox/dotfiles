@@ -1,8 +1,8 @@
 # Function path (zsh)
 fpath=(
-  $fpath
-	~/.zfunctions
-  /usr/local/share/zsh/site-functions
+    $fpath
+    ~/.zfunctions
+    /usr/local/share/zsh/site-functions
 )
 
 # Path
