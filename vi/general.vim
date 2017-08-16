@@ -1,5 +1,5 @@
 syntax on
-set listchars=tab:▸\ ,trail:•,eol:¬ "☠
+set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
 set number
 set relativenumber

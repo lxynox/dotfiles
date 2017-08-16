@@ -57,7 +57,7 @@
     fontFamily: "Consolas, Fira Code, Menlo"
     fontSize: 12
     invisibles:
-      eol: "☕"
+      eol: "☘"
       space: "-"
     softTabs: false
     softWrap: true
