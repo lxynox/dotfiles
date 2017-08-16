@@ -46,5 +46,8 @@ prompt pure
 # Custom
 fortune | cowsay -f www | lolcat
 
+autoload -Uz\
+	capture_screen\
+
 source $DIR/aliases
 source $DIR/work

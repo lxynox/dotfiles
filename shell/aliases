@@ -28,6 +28,7 @@ alias ss="source ~/.zshrc"
 alias h="history"
 alias f="open -a Finder"
 alias k="kill -9"
+alias cap="capture_screen"
 
 # (Elm)
 alias elmr="elm-repl"
