@@ -27,6 +27,8 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'editorconfig/editorconfig-vim'
+
 
 
 call vundle#end()             " end of Vundle
