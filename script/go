@@ -1,0 +1,35 @@
+#!/bin/bash
+
+cd "$(dirname $0)/.."
+
+# Imports
+. script/utils
+
+# Globals
+DOTFILES_ROOT=$(pwd -P)
+DOTFILES=(
+	vi/vimrc
+	shell/zshrc
+	git/gitconfig
+	git/gitignore
+	git/gitconfig.local
+	#hyper.js
+	#macosx
+) # Relative path to root dir
+
+go() {
+	set -e
+
+	echo ''
+	echo 'machine is under bootstrap 🚀'
+	echo ''
+
+	. script/setup_gitconfig
+	. script/install_dotfiles
+	. script/install_homebrew
+
+	echo ''
+	echo ' git configured ✔,  dotfiles installed ✔ , homebrew installed ✔ . ✨✨✨'
+}
+
+go "$@"

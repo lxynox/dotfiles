@@ -15,5 +15,5 @@
 3. Install dependencies & bootstrap the installation
 
  a)`script/install`
- b)`script/boot`
+ b)`script/go`
 
