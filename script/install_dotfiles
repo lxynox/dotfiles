@@ -8,7 +8,7 @@ install_dotfiles () {
 	for src in ${DOTFILES[@]}
 	do
 		dst="$HOME/.$(basename $src)"
-		link_file $src $dst
+		link_file "$DOTFILES_ROOT/$src" $dst
 	done
 }
 
