@@ -23,7 +23,7 @@
     snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
     snapshots = !git stash list --grep snapshot
 
-    #via http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
+    # via http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
     recent-branches = !git for-each-ref --count=15 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 
     # branch
@@ -82,6 +82,11 @@
     filelog = log -u                  # show changes to a file
     mt = mergetool                    # fire up the merge tool
 
+    # submodule
+    # https://developer.atlassian.com/blog/2015/05/the-power-of-git-subtree/
+    sba = "!f() { git subtree add --prefix $2 $1 master --squash;  }; f"
+    sbu = "!f() { git subtree pull --prefix $2 $1 master --squash;  }; f"
+    
     # stash
     ss = stash                        # stash changes
     sl = stash list                   # list stashes
