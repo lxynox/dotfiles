@@ -85,7 +85,7 @@
     # submodule
     # https://developer.atlassian.com/blog/2015/05/the-power-of-git-subtree/
     sba = "!f() { git subtree add --prefix $2 $1 master --squash;  }; f"
-    sbu = "!f() { git subtree pull --prefix $2 $1 master --squash;  }; f"
+    sbu = "!f() { git subtree pull --prefix $2 $1 master;  }; f"
     
     # stash
     ss = stash                        # stash changes
