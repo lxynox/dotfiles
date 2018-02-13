@@ -33,7 +33,7 @@ ZSH_THEME=""
 # Plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew npm node zsh-syntax-highlighting)
+plugins=(git yo zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 

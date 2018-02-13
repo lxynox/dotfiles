@@ -12,7 +12,7 @@ alias g-="git checkout -"
 
 # (Editing)
 alias vi="vim"
-alias e="vi"
+alias e="mvim"
 alias ealias="vi $DOT_HOME/shell/aliases"
 alias epath="vi $DOT_HOME/shell/paths"
 alias eexports="vi $DOT_HOME/shell/exports"

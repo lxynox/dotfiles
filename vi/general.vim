@@ -10,8 +10,8 @@ set clipboard=unnamed
 set showmatch
 set showcmd
 set tw=0
-set background=light
-colorscheme default
+set background=dark
+colorscheme solarized
 " set cursorline, cursorcolumn
 
 " (Swap Files)
