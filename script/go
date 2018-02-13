@@ -10,10 +10,10 @@ DOTFILES_ROOT=$(pwd -P)
 DOTFILES=(
 	vi/vimrc
 	shell/zshrc
+	shell/terminals/hyper.js
 	git/gitconfig
 	git/gitignore
 	git/gitconfig.local
-	#hyper.js
 	#macosx
 ) # Relative path to root dir
 
