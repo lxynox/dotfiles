@@ -2,6 +2,7 @@
   "activate-power-mode":
     comboMode:
       enabled: false
+      multiplier: false
     particles:
       size:
         max: 3
@@ -12,8 +13,8 @@
       totalCount: {}
     playAudio: {}
     plugins:
-      playAudio: true
-      screenShake: true
+      playAudio: false
+      screenShake: false
     screenShake:
       enabled: false
       maxIntensity: 1
@@ -22,7 +23,7 @@
       _analyticsUserId: "c29de772-b007-49e4-bae5-3eebcc8ed831"
   "atom-material-ui":
     colors:
-      abaseColor: "#80deea"
+      abaseColor: "#87ceeb"
       accentColor: "#528c94"
       paintCursor: true
       predefinedColor: "Cyan"
@@ -40,25 +41,31 @@
     classpathFilePath: "."
   "autocomplete-plus": {}
   core:
+    destroyEmptyPanes: false
     disabledPackages: [
       "minimap"
       "whitespace"
-      "atom-beautify"
-      "docblockr"
+      "activate-power-mode"
     ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
       "apex-syntax"
     ]
     titleBar: "custom"
+  "duotone-light-syntax":
+    color:
+      duo: "#87ceeb"
+      uno: "#959155"
   editor:
     autoIndentOnPaste: false
     fontFamily: "Consolas, Fira Code, Menlo"
-    fontSize: 12
+    fontSize: 13
     invisibles:
-      eol: "☘"
-      space: "-"
+      space: " "
+    showIndentGuide: true
+    showInvisibles: true
     softTabs: false
     softWrap: true
     softWrapAtPreferredLineLength: true
@@ -72,8 +79,7 @@
       "ESLint"
     ]
   "linter-eslint": {}
-  "linter-ui-default":
-    panelHeight: 81
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   minimap:
