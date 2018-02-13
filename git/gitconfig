@@ -1,6 +1,6 @@
 # This is Git's per-user configuration file.
 [core]
-  editor = vim
+	editor = atom -w
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [include]
     # private/local gitconfig
@@ -85,8 +85,8 @@
     # submodule
     # https://developer.atlassian.com/blog/2015/05/the-power-of-git-subtree/
     sba = "!f() { git subtree add --prefix $2 $1 master --squash;  }; f"
-    sbu = "!f() { git subtree pull --prefix $2 $1 master;  }; f"
-    
+    sbu = "!f() { git subtree pull --prefix $2 $1 master --squash;  }; f"
+
     # stash
     ss = stash                        # stash changes
     sl = stash list                   # list stashes
@@ -100,4 +100,3 @@
 
     # tag
     t = tag -n                        # show tags with <n> lines of each tag message
-
