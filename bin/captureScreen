@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# capture the current active screen in **interactive** mode
+# for more details, see: `man screencapture`
+
+if [ -z $(hash screencapture) ] || [[ $(which screencapture) =~ ^/ ]]   # empty output from `hash`(no error) OR `which` return a path
+then
+        times=$1
+        delay=$2
+
+        # handle param not provided
+        [ -z $times ] && echo "- Set capture times default to: ${times:=5} times"
+        [ -z $delay ] && echo "- Set time delay default to: ${delay:=5} seconds"; echo ""
+
+        cnt=0
+        while [ $cnt -lt $times ]
+        do
+                screencapture -i "$HOME/Desktop/capture$((cnt+1)).png"  # -w / -s/ -S: --window / --mouse-selection mode / --whole-screen
+                (( cnt++ ))
+                sleep $delay
+        done
+
+        echo "Check your desktop for captured images 🍻"
+else
+        echo "The screencapture cli tool is missing(or not in your PATH), please consider install it using homebrew(or other awesome package manager)"
+fi

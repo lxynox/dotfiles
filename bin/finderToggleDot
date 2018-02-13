@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# note: for macOS version >= Sierra
+# use system default keybinding: `⌘ + <shift> + .` instead
+
+STATUS=$(defaults read com.apple.finder AppleShowAllFiles)
+
+if [ $STATUS -eq 1 ]
+then
+	defaults write com.apple.finder AppleShowAllFiles 0
+else
+	defaults write com.apple.finder AppleShowAllFiles 1
+fi
+
+killall Finder
+
+echo ''
+echo '[ ✔︎ ] dotfiles display are toggled in Finder'
