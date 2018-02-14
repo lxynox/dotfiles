@@ -120,7 +120,7 @@ module.exports = {
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: [
-	'hyper-snazzy',
+    'hyper-snazzy',
   ],
 
   keymaps: {
