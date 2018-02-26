@@ -9,7 +9,7 @@ noremap  0               ^
 noremap  ^               0
 
 " toggle colorschemes
-nnoremap <leader>cs      :colorscheme <tab>
+nnoremap <leader>cs      :colorscheme 
 
 " toggle background
 nnoremap <F5>            :let &background = ( &background == "dark"? "light" : "dark" )<cr>
@@ -23,6 +23,9 @@ nnoremap <leader>h       :help
 
 " buffers
 nnoremap <leader>b       :buffers<cr>
+nnoremap <tab>           :bnext<cr>
+nnoremap <S-tab>         :bprevious<cr>
+nnoremap <C-x>           :bdelete<cr>
 " Now, new mac pro removes <ESC> key, here comes some temporary REMEDY
 "inoremap ;;              <esc>
 inoremap <leader>,       <C-X><C-O>

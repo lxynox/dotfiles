@@ -15,53 +15,27 @@
  * (To see them, uncomment and save)
  */
 
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
 // style the background and foreground colors on the atom-text-editor-element itself
 atom-text-editor {
   font-style: normal;
   text-rendering: optimizeLegibility;
 }
 
-// reference: https://medium.com/@docodemore/an-alternative-to-operator-mono-font-6e5d040e1c7e
-atom-text-editor.editor {
-  .syntax--string.syntax--quoted,
-  .syntax--string.syntax--regexp {
-    -webkit-font-feature-settings: "liga" off, "calt" off;
-  }
-  
-  .syntax--source.syntax--js.syntax--jsx > .syntax--keyword.syntax--control.syntax--flow.syntax--js,
-  .syntax--storage, // let, var
-  .syntax--keyword.syntax--control, // if, for, return
-  .syntax--variable.syntax--language.syntax--js, // this
-  .syntax--type .syntax--function {
-    vertical-align: baseline;
-    font-weight: bold;
-    font-style: italic;
-    // font-family: Menlo;
-    // font-size: 1.5em;
-    height: inherit;
-    line-height: 1rem;
-  }
-  
-  .syntax--source.syntax--js.syntax--jsx,
-  .syntax--storage.syntax--type.syntax--function.syntax--arrow.js,
-  .syntax--variable {
-    font-family: Consolas, 'Fira Code', Menlo, monospace;
-    font-weight: normal;
-  }
-
-  .syntax--comment {
-    font-style: italic;
-  }
-
-  .syntax--entity.syntax--name {
-    font-weight: bold;
-    font-style: italic;
-  }
-}
-
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor.editor .cursor {
+atom-text-editor::shadow .cursor {
   // border-color: red;
+
+  // -block
+  border-width: 5px;
+
+  // -underline
+  // border-left: none;
+  // border-bottom: 2px solid #fff;
 }
 
 // scrollbars {{{

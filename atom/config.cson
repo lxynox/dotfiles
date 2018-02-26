@@ -40,6 +40,9 @@
   "autocomplete-java":
     classpathFilePath: "."
   "autocomplete-plus": {}
+  "base16-syntax":
+    scheme: "Grayscale"
+    style: "Light"
   core:
     destroyEmptyPanes: false
     disabledPackages: [
@@ -50,8 +53,8 @@
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
-      "atom-material-ui"
-      "apex-syntax"
+      "native-ui"
+      "base16-syntax"
     ]
     titleBar: "custom"
   "duotone-light-syntax":
@@ -59,8 +62,9 @@
       duo: "#87ceeb"
       uno: "#959155"
   editor:
+    autoIndent: false
     autoIndentOnPaste: false
-    fontFamily: "Consolas, Fira Code, Menlo"
+    fontFamily: "Envy Code R, Menlo, Consolar, Fira Code"
     fontSize: 13
     invisibles:
       space: " "
@@ -79,7 +83,8 @@
       "ESLint"
     ]
   "linter-eslint": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 81
   "markdown-preview":
     useGitHubStyle: true
   minimap:
