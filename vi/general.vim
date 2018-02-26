@@ -10,7 +10,7 @@ set clipboard=unnamed
 set showmatch
 set showcmd
 set tw=0
-set background=dark
+set background=light
 " set cursorline, cursorcolumn
 
 " (Swap Files)
