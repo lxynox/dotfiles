@@ -1,3 +1,9 @@
+if has('mac')
+	set shell=/usr/local/bin/zsh
+elseif has('unix')
+	set shell=/usr/bin/zsh
+endif
+
 syntax on
 set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
@@ -10,7 +16,7 @@ set clipboard=unnamed
 set showmatch
 set showcmd
 set tw=0
-set background=light
+set background=dark
 " set cursorline, cursorcolumn
 
 " (Swap Files)
