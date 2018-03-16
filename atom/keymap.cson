@@ -46,4 +46,5 @@
 	# tern
 	'g d': 'atom-ternjs:definition'
 	'g r': 'atom-ternjs:references'
+	'g f': 'open-this:here'
 	'alt-o': 'atom-ternjs:documentation'

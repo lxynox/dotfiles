@@ -41,7 +41,7 @@
     classpathFilePath: "."
   "autocomplete-plus": {}
   "base16-syntax":
-    scheme: "Grayscale"
+    scheme: "Google"
     style: "Light"
   core:
     destroyEmptyPanes: false
@@ -62,16 +62,14 @@
       duo: "#87ceeb"
       uno: "#959155"
   editor:
-    autoIndent: false
     autoIndentOnPaste: false
     fontFamily: "Envy Code R, Menlo, Consolar, Fira Code"
-    fontSize: 13
+    fontSize: 12
     invisibles:
       space: " "
     showIndentGuide: true
     showInvisibles: true
     softTabs: false
-    softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "69e968d8-39f3-7542-7e4d-7358c28fd32d"
@@ -83,8 +81,7 @@
       "ESLint"
     ]
   "linter-eslint": {}
-  "linter-ui-default":
-    panelHeight: 81
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   minimap:
