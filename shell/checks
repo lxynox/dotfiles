@@ -1,7 +1,7 @@
 export OS="$(uname)"
 
-if [[ $OS = 'Linux'  ]]; then
+if [[ $OS = 'Linux' ]]; then
 	IS_LINUX=1
-elif [[ $OS = 'Darwin'  ]]; then
+elif [[ $OS = 'Darwin' ]]; then
 	IS_MAC=1
 fi
