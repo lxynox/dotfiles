@@ -7,6 +7,7 @@ PATH=$(concat "$BREW_HOME"				'bin')
 PATH=$(concat "$BREW_HOME"				'sbin')
 PATH=$(concat "$RVM_HOME"         'bin')
 PATH=$(concat "$GEM_HOME"         'bin')
+PATH=$(concat "$DOT_HOME"         'bin')
 
 # Uncommented below when screwed up
 # PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
