@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Oh-my-zsh (zsh plugin manager: https://github.com/robbyrussell/oh-my-zsh)
 
 # (general)
@@ -22,4 +24,3 @@ ZSH_THEME=""
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
-

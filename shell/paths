@@ -1,10 +1,12 @@
+#!/bin/bash
+
 PATH=$(concat "$ANDROID_HOME"     'tools')
 PATH=$(concat "$ANDROID_HOME"     'platform-tools')
-PATH=$(concat "$JAVA_HOME"				'bin')
-PATH=$(concat "$CATALINA_HOME"		'bin')
-PATH=$(concat "$MYSQL_HOME"			  'bin')
-PATH=$(concat "$BREW_HOME"				'bin')
-PATH=$(concat "$BREW_HOME"				'sbin')
+PATH=$(concat "$JAVA_HOME"        'bin')
+PATH=$(concat "$CATALINA_HOME"    'bin')
+PATH=$(concat "$MYSQL_HOME"       'bin')
+PATH=$(concat "$BREW_HOME"        'bin')
+PATH=$(concat "$BREW_HOME"        'sbin')
 PATH=$(concat "$RVM_HOME"         'bin')
 PATH=$(concat "$GEM_HOME"         'bin')
 PATH=$(concat "$DOT_HOME"         'bin')

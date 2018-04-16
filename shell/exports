@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # (System)
 export SHELL=/usr/local/bin/zsh
 export LANG=en_US.UTF-8
@@ -20,5 +22,5 @@ if [ "$IS_LINUX" -eq 1 ]; then
 elif [ "$IS_MAC" -eq 1 ]; then
 	export CATALINA_HOME=/Library/Tomcat
 	export MYSQL_HOME=/usr/local/mysql
-  export JAVA_HOME=$(/usr/libexec/java_home)
+	export JAVA_HOME=$(/usr/libexec/java_home)
 fi
