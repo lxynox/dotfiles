@@ -1,0 +1,40 @@
+{
+    "editor.fontSize": 12,
+    "editor.fontFamily": "Input Mono, Menlo, Envy Code R, Consolas",
+    "editor.cursorStyle": "line-thin",
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "editor.tabSize": 8,
+    "window.zoomLevel": 0,
+    "powermode.enabled": true,
+    "powermode.presets": "flames", // particles, magic, clippy etc.
+
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.fontSize": 12,
+
+    "workbench.colorTheme": "Verdandi",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.sideBar.location": "right",
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Palenight",
+        "accent": "Indigo",
+        "accentPrevious": "Bright Teal"
+    },
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#5C6BC0",
+        "list.activeSelectionForeground": "#5C6BC0",
+        "list.inactiveSelectionForeground": "#5C6BC0",
+        "list.highlightForeground": "#5C6BC0",
+        "scrollbarSlider.activeBackground": "#5C6BC050",
+        "editorSuggestWidget.highlightForeground": "#5C6BC0",
+        "textLink.foreground": "#5C6BC0",
+        "progressBar.background": "#5C6BC0",
+        "pickerGroup.foreground": "#5C6BC0",
+        "tab.activeBorder": "#5C6BC0",
+        "notificationLink.foreground": "#5C6BC0"
+    },
+    "vsicons.dontShowNewVersionMessage": true
+}
