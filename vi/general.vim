@@ -7,8 +7,8 @@ endif
 syntax on
 set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
-set number
-set relativenumber
+" set number
+" set relativenumber
 set columns=88
 set lines=40
 set encoding=utf-8

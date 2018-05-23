@@ -11,6 +11,7 @@ export DOT_HOME=$HOME/.dotfiles
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export RVM_HOME=$HOME/.rvm
 export CARGO_HOME=$HOME/.cargo
+export VSCODE_HOME=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app
 
 # - py
 export PIP_INSTALL_HOME=/usr/local/lib/python2.7/site-packages

@@ -71,6 +71,7 @@
     showInvisibles: true
     softTabs: false
     softWrapAtPreferredLineLength: true
+    tabType: "soft"
   "exception-reporting":
     userId: "69e968d8-39f3-7542-7e4d-7358c28fd32d"
   "git-plus":
