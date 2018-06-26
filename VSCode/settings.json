@@ -1,6 +1,6 @@
 {
-    "editor.fontSize": 12,
-    "editor.fontFamily": "Input Mono, Menlo, Envy Code R, Consolas",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Input Mono Compressed, Menlo, Envy Code R, Consolas",
     "editor.cursorStyle": "line-thin",
     "editor.insertSpaces": true,
     "editor.minimap.enabled": false,
@@ -8,15 +8,13 @@
       "editor.formatOnSave": true
     },
     "editor.tabSize": 8,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "powermode.enabled": true,
     "powermode.presets": "flames", // particles, magic, clippy etc.
 
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.fontFamily": "Input Mono, Source Code Pro for Powerline",
     "terminal.integrated.fontSize": 12,
-
-    "workbench.colorTheme": "Verdandi",
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
     "workbench.sideBar.location": "right",
     "materialTheme.cache.workbench.settings": {
         "themeColours": "Palenight",
@@ -36,5 +34,10 @@
         "tab.activeBorder": "#5C6BC0",
         "notificationLink.foreground": "#5C6BC0"
     },
-    "vsicons.dontShowNewVersionMessage": true
+    "vsicons.dontShowNewVersionMessage": true,
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Material Theme Lighter",
+    "materialTheme.fixIconsRunning": false
 }

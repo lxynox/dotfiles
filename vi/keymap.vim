@@ -9,7 +9,7 @@ noremap  0               ^
 noremap  ^               0
 
 " toggle colorschemes
-nnoremap <leader>cs      :colorscheme
+nnoremap <leader>cs      :colorscheme<space>
 
 " toggle background
 nnoremap <F5>            :let &background = ( &background == "dark"? "light" : "dark" )<cr>

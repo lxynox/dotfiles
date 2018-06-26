@@ -11,6 +11,7 @@ PATH=$(concat "$RVM_HOME"         'bin')
 PATH=$(concat "$GEM_HOME"         'bin')
 PATH=$(concat "$DOT_HOME"         'bin')
 PATH=$(concat "$CARGO_HOME"       'bin')
+PATH=$(concat "$PYTHON3_HOME"     'bin')
 
 # Uncommented below when screwed up
 # PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin

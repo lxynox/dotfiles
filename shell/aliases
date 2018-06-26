@@ -13,6 +13,7 @@ alias g="git"
 alias g-="git checkout -"
 
 # (Editing)
+alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias vi="vim"
 alias e="mvim"
 alias ealias="vi $DOT_HOME/shell/aliases"

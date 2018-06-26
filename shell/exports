@@ -16,6 +16,7 @@ export CARGO_HOME=$HOME/.cargo
 export PIP_INSTALL_HOME=/usr/local/lib/python2.7/site-packages
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$DEV_HOME/venv
+export PYTHON3_HOME=$HOME/Library/Python/3.6
 
 if [ "$IS_LINUX" -eq 1 ]; then
 	export BREW_HOME=/home/linuxbrew/.linuxbrew

@@ -17,6 +17,7 @@ set showmatch
 set showcmd
 set tw=0
 set background=dark
+colorscheme Monokai
 " set cursorline, cursorcolumn
 
 " (Swap Files)

@@ -28,8 +28,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'editorconfig/editorconfig-vim'
-
-
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()             " end of Vundle
 filetype plugin indent on     " required
