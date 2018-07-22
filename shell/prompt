@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # gif-for-cli  5437241
-fortune | cowsay -f www | lolcat
+fortune | lolcat #cowsay -f www |
 
 promptinit; prompt pure
