@@ -1,8 +1,9 @@
 ## zsh
 
-### Themes
-* [pure](https://github.com/sindresorhus/pure)
-  ![pure theme](./shell.png)
+| Themes | Pure | Custom |
+| --- | --- | --- |
+| GH link | https://github.com/sindresorhus/pure | https://github.com/zeit/hyper |
+| Screenshots | ![pure theme](./pure.png) | ![custom theme](./custom.png) |
 
 ### Customize colors 🌈
 
