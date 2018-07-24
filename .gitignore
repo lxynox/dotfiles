@@ -6,6 +6,7 @@
 *.fatbin
 
 .DS_Store
+.vscode/
 
 git/gitconfig.local
 shell/work

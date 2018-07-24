@@ -8,7 +8,7 @@ cd "$(dirname $0)/.."
 # Globals
 DOTFILES_ROOT=$(pwd -P)
 DOTFILES=(
-	vi/vimrc
+	vim/vimrc
 	shell/zshrc
 	shell/terminals/hyper.js
 	git/gitconfig
