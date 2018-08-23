@@ -1,4 +1,4 @@
-" let g:airline_theme='term'
+let g:airline_theme='term'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
