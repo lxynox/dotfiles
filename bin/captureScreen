@@ -9,13 +9,13 @@ then
         delay=$2
 
         # handle param not provided
-        [ -z $times ] && echo "- Set capture times default to: ${times:=5} times"
-        [ -z $delay ] && echo "- Set time delay default to: ${delay:=5} seconds"; echo ""
+        [ -z $times ] && echo "- Set capture times default to: ${times:=1} times"
+        [ -z $delay ] && echo "- Set time delay default to: ${delay:=3} seconds"; echo ""
 
         cnt=0
         while [ $cnt -lt $times ]
         do
-                screencapture -i "$HOME/Desktop/capture$((cnt+1)).png"  # -w / -s/ -S: --window / --mouse-selection mode / --whole-screen
+                screencapture -w "$HOME/Desktop/capture$((cnt+1)).png"  # -w / -s/ -S: --window / --mouse-selection mode / --whole-screen
                 (( cnt++ ))
                 sleep $delay
         done

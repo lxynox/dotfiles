@@ -11,4 +11,3 @@ exec "so" . vim_home . "/vundles.vim"
 exec "so" . vim_home . "/general.vim"
 exec "so" . vim_home . "/keymap.vim"
 exec "so" . vim_home . "/settings.vim"
-

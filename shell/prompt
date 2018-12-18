@@ -1,4 +1,3 @@
 #!/bin/bash
 
-# gif-for-cli  5437241
-fortune | lolcat # | pokemonsay
+fortune | lolcat

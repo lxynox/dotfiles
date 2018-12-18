@@ -1,8 +1,7 @@
 syntax on
 set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
-set number
-" set relativenumber
+set number "relativenumber
 set columns=88
 set lines=40
 set encoding=utf-8
@@ -11,8 +10,11 @@ set showmatch
 set showcmd
 set tw=0
 colorscheme 256_noir
-" set background=light
+set background=dark
 " set cursorline, cursorcolumn
+
+" (whitespace)
+autocmd BufWritePre * :%s/\s\+$//e
 
 " (Swap Files)
 set noswapfile

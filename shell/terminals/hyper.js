@@ -8,22 +8,22 @@ module.exports = {
 	// ---------------------------------- Plugins -----------------------------------
 	// format: [@org/]project[#version]
 	plugins: [
-		'hyperpower',
-		'hyperterm-blink',
+		// 'hyperpower',
+		// 'hyperterm-blink',
 		// 'hyper-solarized-light'
-		// 'hyper-snazzy'
+		'hyper-snazzy'
 	],
 
 	localPlugins: [
-		'hyper-ivory'
+		// 'hyper-ivory'
 		// 'hyper-beige',
 	],
 
 	// ----------------------------------  General -----------------------------------
 	config: {
 		fontSize: 13,
-		fontFamily: 'Menlo, Avenir Next, monospace',
-		cursorShape: 'BEAM',                      // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
+		fontFamily: 'Monaco, Menlo, Avenir Next, monospace',
+		cursorShape: 'BLOCK',                      // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
 		colors: {
 			black: '#000000',
 			red: '#ff0000',

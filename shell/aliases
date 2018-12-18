@@ -1,27 +1,25 @@
 #!/bin/bash
 
-# (Cds)
-alias tmp="cd /tmp"
-alias dot="cd $DOT_HOME"
-alias dev="cd $DEV_HOME"
-alias work="cd $DEV_HOME/work"
-alias code="cd $DEV_HOME/code"
-alias fork="cd $DEV_HOME/fork"
-
-# (Git)
-alias g="git"
-alias g-="git checkout -"
-
 # (Editing)
 alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias vi="vim"
-alias e="mvim"
+alias e="code"
 alias ealias="vi $DOT_HOME/shell/aliases"
 alias epath="vi $DOT_HOME/shell/paths"
 alias eexports="vi $DOT_HOME/shell/exports"
 alias ework="vi $DOT_HOME/shell/work"
 alias ezshrc="vi ~/.zshrc"
 alias eomz="vi ~/.oh-my-zsh"
+
+# (Cds)
+alias tmp="cd /tmp"
+alias dot="cd $DOT_HOME"
+alias dev="cd $DEV_HOME"
+alias fork="cd $DEV_HOME/fork"
+
+# (Git)
+alias g="git"
+alias g-="git checkout -"
 
 # (Cli)
 alias cat="ccat"
@@ -31,7 +29,7 @@ alias ss="source ~/.zshrc"
 alias h="history"
 alias f="open -a Finder"
 alias k="kill -9"
-alias cap="capture_screen"
+alias cap="captureScreen"
 
 # (Elm)
 alias elmr="elm-repl"
