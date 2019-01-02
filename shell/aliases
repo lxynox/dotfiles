@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # (Editing)
-alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias vi="vim"
-alias e="code"
+
+alias vsc="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias e="vsc"
 alias ealias="vi $DOT_HOME/shell/aliases"
 alias epath="vi $DOT_HOME/shell/paths"
 alias eexports="vi $DOT_HOME/shell/exports"
@@ -16,6 +17,7 @@ alias tmp="cd /tmp"
 alias dot="cd $DOT_HOME"
 alias dev="cd $DEV_HOME"
 alias fork="cd $DEV_HOME/fork"
+alias code="cd $DEV_HOME/code"
 
 # (Git)
 alias g="git"

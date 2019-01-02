@@ -10,7 +10,7 @@ source $DIR/checks
 source $DIR/exports
 source $DIR/functions
 source $DIR/paths
-source $DIR/omz
+source $DIR/ohmyzsh
 source $DIR/aliases
 source $DIR/prompt
 
