@@ -8,7 +8,6 @@ module.exports = {
 	// ---------------------------------- Plugins -----------------------------------
 	// format: [@org/]project[#version]
 	plugins: [
-		// 'hyperpower',
 		// 'hyperterm-blink',
 		// 'hyper-solarized-light'
 		'hyper-snazzy'
@@ -23,7 +22,7 @@ module.exports = {
 	config: {
 		fontSize: 13,
 		fontFamily: 'Monaco, Menlo, Avenir Next, monospace',
-		cursorShape: 'BLOCK',                      // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
+		cursorShape: 'BEAM',                      // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
 		colors: {
 			black: '#000000',
 			red: '#ff0000',
