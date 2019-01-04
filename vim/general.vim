@@ -2,16 +2,16 @@ syntax on
 set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
 set number "relativenumber
-set columns=88
-set lines=40
 set encoding=utf-8
 set clipboard=unnamed
 set showmatch
 set showcmd
 set tw=0
-colorscheme 256_noir
+colorscheme 256-grayvim
 set background=dark
 " set cursorline, cursorcolumn
+" set columns=88
+" set lines=40
 
 " (whitespace)
 autocmd BufWritePre * :%s/\s\+$//e
