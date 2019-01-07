@@ -1,4 +1,5 @@
 syntax on
+
 set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
 set number "relativenumber
@@ -9,9 +10,9 @@ set showcmd
 set tw=0
 colorscheme 256-grayvim
 set background=dark
+set updatetime=100                             " https://github.com/airblade/vim-gitgutter#getting-started
+set hidden                                     " https://stackoverflow.com/questions/2732267/vim-loses-undo-history-when-changing-buffers
 " set cursorline, cursorcolumn
-" set columns=88
-" set lines=40
 
 " (whitespace)
 autocmd BufWritePre * :%s/\s\+$//e

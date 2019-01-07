@@ -9,4 +9,4 @@
 .vscode/
 
 git/gitconfig.local
-shell/work
+work*
