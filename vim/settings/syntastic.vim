@@ -1,4 +1,3 @@
-set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
@@ -12,3 +11,5 @@ let g:syntastic_javascript_eslint_generic = 1
 let g:syntastic_javascript_eslint_exec = '/bin/ls'
 let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 let g:syntastic_javascript_eslint_args='-f compact'
+
+nmap <leader>sr :SyntasticReset<CR>

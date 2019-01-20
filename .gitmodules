@@ -1,0 +1,3 @@
+[submodule "shell/custom/themes/node-theme"]
+	path = shell/custom/themes/node-theme
+	url = git@github.com:skuridin/oh-my-zsh-node-theme.git
