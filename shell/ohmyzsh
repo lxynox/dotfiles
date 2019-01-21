@@ -16,7 +16,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_CUSTOM=$DOT_HOME/shell/custom
-ZSH_THEME="node"
+ZSH_THEME="lambda-gitster"
 
 # (plugins)
 # Plugins can be found in ~/.oh-my-zsh/plugins/*

@@ -10,3 +10,7 @@
 	path = shell/custom/plugins/zsh-syntax-highlighting
 	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
 	branch = master
+[submodule "shell/custom/themes/lambda-gitster"]
+	path = shell/custom/themes/lambda-gitster
+	url = git@github.com:ergenekonyigit/lambda-gitster.git
+	branch = master
