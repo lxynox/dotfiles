@@ -21,6 +21,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
