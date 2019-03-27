@@ -4,17 +4,10 @@
 
 ### Install
 
-1. Clone the repo
-
- `git clone https://github.com/lxyad/dots.git ~/.dotfiles`
-
-2. Enter the new cloned repo
-
- `cd ~/.dotfiles`
-
-3. Install dependencies & bootstrap the installation
-
- a)`script/install`
- b)`script/go`
+```shell
+git clone https://github.com/lxynox/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+script/install && script/go
+```
 
 
