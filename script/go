@@ -14,6 +14,8 @@ DOTFILES=(
 	git/gitconfig
 	git/gitignore
 	git/gitconfig.local
+  prettier/prettierrc.js
+  editorconfig/editorconfig
 	#macosx
 ) # Relative path to root dir
 
