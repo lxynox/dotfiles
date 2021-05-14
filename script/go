@@ -8,30 +8,32 @@ cd "$(dirname $0)/.."
 # Globals
 DOTFILES_ROOT=$(pwd -P)
 DOTFILES=(
-	vim/vimrc
-	shell/zshrc
-	shell/terminals/hyper.js
-	git/gitconfig
-	git/gitignore
-	git/gitconfig.local
+  tmux/tmux.conf
+  tmux/tmux.conf.osx
+  vim/vimrc
+  shell/zshrc
+  shell/terminals/hyper.js
+  git/gitconfig
+  git/gitignore
+  git/gitconfig.local
   prettier/prettierrc.js
   editorconfig/editorconfig
-	#macosx
+  #macosx
 ) # Relative path to root dir
 
 go() {
-	set -e
+  set -e
 
-	echo ''
-	echo 'machine is under bootstrap 🚀'
-	echo ''
+  echo ''
+  echo 'machine is under bootstrap 🚀'
+  echo ''
 
-	. script/setup_gitconfig
-	. script/install_dotfiles
-	. script/install_homebrew
+  . script/setup_gitconfig
+  . script/install_dotfiles
+  . script/install_homebrew
 
-	echo ''
-	echo ' git configured ✔,  dotfiles installed ✔ , homebrew installed ✔ . ✨✨✨'
+  echo ''
+  echo ' git configured ✔,  dotfiles installed ✔ , homebrew installed ✔ . ✨✨✨'
 }
 
 go "$@"
