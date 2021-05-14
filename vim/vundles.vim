@@ -6,28 +6,31 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'epilande/vim-react-snippets'
-Plugin 'pangloss/vim-javascript'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'maxmellon/vim-jsx-pretty'
-
-Plugin 'vim-syntastic/syntastic'
 Plugin 'ctrlp.vim'
 Plugin 'The-NERD-tree'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'prettier/vim-prettier'
 
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'prettier/vim-prettier'
 
+Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'edkolev/tmuxline.vim'
+
+Plugin 'rust-lang/rust.vim'
+Plugin 'elmcast/elm-vim'
+Plugin 'leafgarland/typescript-vim'
+
+"Plugin 'epilande/vim-react-snippets'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'maxmellon/vim-jsx-pretty'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()             " end of Vundle
 filetype plugin indent on     " required

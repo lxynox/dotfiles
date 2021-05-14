@@ -2,13 +2,13 @@ syntax on
 
 set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
-set number "relativenumber
+set relativenumber
 set encoding=utf-8
 set clipboard=unnamed
 set showmatch
 set showcmd
 set tw=0
-colorscheme 256-grayvim
+colorscheme candyman
 set background=dark
 set updatetime=100                             " https://github.com/airblade/vim-gitgutter#getting-started
 set hidden                                     " https://stackoverflow.com/questions/2732267/vim-loses-undo-history-when-changing-buffers

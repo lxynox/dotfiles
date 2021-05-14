@@ -1,4 +1,5 @@
 let g:prettier#quickfix_enabled = 1
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
+let g:prettier#autoformat = 1
+
+autocmd BufWritePre *.ts,*.tsx,*.js,*.jsx,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
 
