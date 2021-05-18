@@ -5,13 +5,66 @@
 #  (_)____|____/|_| |_|_| \_\\____|
 
 DIR="$HOME/.dotfiles/shell"
+OS="$(uname)"
 
-source $DIR/checks
-source $DIR/exports
-source $DIR/functions
-source $DIR/paths
-source $DIR/ohmyzsh
-source $DIR/aliases
-source $DIR/prompt
+if [[ $OS = 'Linux' ]]; then
+	IS_LINUX=1
+elif [[ $OS = 'Darwin' ]]; then
+	IS_MAC=1
+fi
 
-if [ -f $DIR/work ]; then source $DIR/work; fi
+## exports
+export SHELL=/bin/zsh
+export LANG=en_US.UTF-8
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+## functions
+fpath=(
+	$fpath
+	~/.zfunctions
+	/usr/local/share/zsh/site-functions
+)
+
+## paths
+export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.zsh/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH='/Applications/Visual Studio Code.app/Contents/Resources/app/bin':$PATH
+
+# Uncommented below when screwed up
+# PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+## aliases
+alias r='less'
+alias e="vim"
+alias c='ccat'
+alias g='git'
+alias t='tmux'
+alias h="history"
+alias o="open -a Finder"
+alias k="kill -9"
+alias diff='icdiff'
+
+## ohmyzsh
+ZSH_THEME="random"
+ZSH_CUSTOM=$DIR/custom
+
+plugins=(
+  aws
+  git
+  pyenv
+  rbenv
+  ssh-agent
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+export ZSH=$HOME/.oh-my-zsh
+export UPDATE_ZSH_DAYS=15
+source $ZSH/oh-my-zsh.sh
+
+## work
+if [ -f $HOME/.zshrc-work ]; then
+  source $HOME/.zshrc-work
+fi

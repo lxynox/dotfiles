@@ -1,9 +1,0 @@
-#!/bin/bash
-
-export OS="$(uname)"
-
-if [[ $OS = 'Linux' ]]; then
-	IS_LINUX=1
-elif [[ $OS = 'Darwin' ]]; then
-	IS_MAC=1
-fi
