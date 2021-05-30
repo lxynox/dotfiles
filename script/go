@@ -6,17 +6,15 @@ cd "$(dirname $0)/.."
 
 DOTFILES_ROOT=$(pwd -P)
 DOTFILES=(
-  # tmux/tmux.conf
-  # tmux/tmux.conf.osx
-  # vim/vimrc
+  tmux/tmux.conf
+  tmux/tmux.conf.osx
+  vim/vimrc
   shell/zshrc
-  # shell/terminals/hyper.js
-  # git/gitconfig
-  # git/gitignore
-  # git/gitconfig.local
-  # prettier/prettierrc.js
-  # editorconfig/editorconfig
-  #macosx
+  git/gitconfig
+  git/gitignore
+  git/gitconfig.local
+  formatter/prettierrc.js
+  formatter/editorconfig
 ) # Relative path to root dir
 
 go() {
