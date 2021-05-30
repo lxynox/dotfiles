@@ -11,6 +11,9 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/science'
+tab 'homebrew/cask-fonts'
+# http://brew.sh/homebrew-science/
+tap 'caskroom/cask'
 
 # brew install <package>
 brew 'git'
@@ -29,14 +32,11 @@ brew 'pyenv'
 brew 'rbenv'
 brew 'rustup'
 
-# http://brew.sh/homebrew-science/
-tap 'caskroom/cask'
-
 # https://caskroom.github.io/
 cask_args appdir: '/Applications'
 
 cask 'spotify'
-cask 'hyper'
 cask 'alfred'
 cask 'firefox'
 cask 'visual-studio-code'
+cask 'font-fira-code-nerd-font'
