@@ -7,7 +7,9 @@ let mapleader = ","
 let maplocalleader = ","
 
 let vim_home = "~/.dotfiles/vim"
+
 exec "so" . vim_home . "/plug.vim"
 exec "so" . vim_home . "/general.vim"
 exec "so" . vim_home . "/keymap.vim"
 exec "so" . vim_home . "/settings.vim"
+

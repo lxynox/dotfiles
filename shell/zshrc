@@ -37,6 +37,7 @@ export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 # PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 ## aliases
+alias f='fzf'
 alias r='less'
 alias e="nvim"
 alias c='ccat'
@@ -52,6 +53,7 @@ ZSH_THEME="node"
 ZSH_CUSTOM=$DIR/custom
 
 plugins=(
+  fzf
   aws
   git
   pyenv
@@ -69,3 +71,5 @@ source $ZSH/oh-my-zsh.sh
 if [ -f $HOME/.zshrc-work ]; then
   source $HOME/.zshrc-work
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

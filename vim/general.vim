@@ -1,28 +1,33 @@
-syntax on
+colorscheme nord
 
+" set guicursor=n-c-i:ver100-iCursor
+set background=dark
+set relativenumber
+set number
 set listchars=tab:▸\ ,trail:∙,eol:⌁ "☠
 set nolist
-set relativenumber
-set encoding=utf-8
+set encoding=UTF-8
 set clipboard=unnamed
 set showmatch
 set showcmd
 set tw=0
-colorscheme candyman
-set background=dark
-set updatetime=100                             " https://github.com/airblade/vim-gitgutter#getting-started
-set hidden                                     " https://stackoverflow.com/questions/2732267/vim-loses-undo-history-when-changing-buffers
-" set cursorline, cursorcolumn
+" https://stackoverflow.com/questions/2732267/vim-loses-undo-history-when-changing-buffers
+set hidden
 
-" (whitespace)
-autocmd BufWritePre * :%s/\s\+$//e
+" window
+noremap <leader>h <C-w>s
+noremap <leader>v <C-w>v
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
-" (Swap Files)
+" swap files
 set noswapfile
 set nobackup
 set nowb
 
-" (Indentation)
+" indentation
 set autoindent
 set smartindent
 set smarttab
@@ -30,11 +35,10 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-nmap <leader>T :set noexpandtab tabstop=2 softtabstop=2 shiftwidth=2<CR>
-nmap <leader>t :set expandtab tabstop=2 shiftwidth=2 softtabstop=2<CR>
 
-" (Completion)
-"set wildmode=list:longest
+" completion
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 set wildmenu                                  " enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~                   " stuff to ignore when tab completing
 set wildignore+=*vim/backups*
@@ -52,14 +56,14 @@ set wildignore+=*/dist/**
 set wildignore+=*/.svn/**
 set wildignore+=*/.git/**
 
-" (Scrolling)
+" scrolling
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
 
-" (Search)
+" search
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-"
+

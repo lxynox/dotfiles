@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [core]
 	editor = vim
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	# pager = diff-so-fancy | less --tabs=4 -RFX
 [include]
     # private/local gitconfig
     path = ~/.gitconfig.local
@@ -31,7 +31,7 @@
 
     # commit
     c = commit -m                     # commit with message
-    ca = commit -am                   # commit all with message
+    cam = commit -am                  # commit all with message
     ci = commit                       # commit
     amend = commit --amend            # ammend your last commit
     ammend = commit --amend           # ammend your last commit
@@ -58,6 +58,7 @@
 
     # log
     l = log --graph --date=short
+    lo = log --graph --date=short --oneline
     changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
     short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
     simple = log --pretty=format:\" * %s\"
@@ -70,6 +71,7 @@
     ps = push                         # push
 
     # rebase
+    rb = rebase
     rc = rebase --continue            # continue rebase
     rs = rebase --skip                # skip rebase
 
@@ -77,7 +79,8 @@
     r = remote -v                     # show remotes (verbose)
 
     # reset
-    unstage = reset HEAD              # remove files from index (tracking)
+    rh  = reset HEAD
+    rhh  = reset --hard HEAD
     uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
     filelog = log -u                  # show changes to a file
     mt = mergetool                    # fire up the merge tool
@@ -100,3 +103,11 @@
 
     # tag
     t = tag -n                        # show tags with <n> lines of each tag message
+
+    # show
+    sh = show                         # show
+
+    # fetch
+    fo = fetch origin                 # fetch
+[init]
+	defaultBranch = main
