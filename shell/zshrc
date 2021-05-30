@@ -31,13 +31,14 @@ export PATH=$HOME/.zsh/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH='/Applications/Visual Studio Code.app/Contents/Resources/app/bin':$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 
 # Uncommented below when screwed up
 # PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 ## aliases
 alias r='less'
-alias e="vim"
+alias e="nvim"
 alias c='ccat'
 alias g='git'
 alias t='tmux'
@@ -47,7 +48,7 @@ alias k="kill -9"
 alias diff='icdiff'
 
 ## ohmyzsh
-ZSH_THEME="random"
+ZSH_THEME="node"
 ZSH_CUSTOM=$DIR/custom
 
 plugins=(

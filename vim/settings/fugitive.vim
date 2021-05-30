@@ -6,4 +6,3 @@ nnoremap <leader>gg      :Ggrep<Space>
 nnoremap <leader>gl      :Glog<cr><cr><cr>:copen<cr>
 nnoremap <leader>gs      :Gstatus<cr>
 nnoremap <leader>gh      :Gbrowse<cr>
-nnoremap <leader>ge      :Gedit<cr>

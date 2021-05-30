@@ -9,26 +9,34 @@
 # Reference: https://github.com/Homebrew/homebrew-bundle
 # https://github.com/Homebrew
 
-cask_args appdir: '/Applications'
-
 tap 'homebrew/bundle'
 tap 'homebrew/science'
 
 # brew install <package>
 brew 'git'
-brew 'tree'
+brew 'nvim'
 brew 'tmux'
-brew 'ccat'
+brew 'fzf'
+brew 'ripgrep'
+brew 'bat'
+brew 'tree'
 brew 'icdiff'
 brew 'diff-so-fancy'
-brew 'pyenv-virtualenv'
+
+brew 'node'
+brew 'python'
+brew 'pyenv'
 brew 'rbenv'
+brew 'rustup'
 
 # http://brew.sh/homebrew-science/
 tap 'caskroom/cask'
 
 # https://caskroom.github.io/
+cask_args appdir: '/Applications'
+
 cask 'spotify'
 cask 'hyper'
 cask 'alfred'
 cask 'firefox'
+cask 'visual-studio-code'
