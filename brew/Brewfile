@@ -11,7 +11,7 @@
 
 tap 'homebrew/bundle'
 tap 'homebrew/science'
-tab 'homebrew/cask-fonts'
+tap 'homebrew/cask-fonts'
 # http://brew.sh/homebrew-science/
 tap 'caskroom/cask'
 

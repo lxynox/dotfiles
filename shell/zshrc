@@ -8,9 +8,15 @@ DIR="$HOME/.dotfiles/shell"
 OS="$(uname)"
 
 if [[ $OS = 'Linux' ]]; then
-	IS_LINUX=1
+  export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew";
+  export HOMEBREW_CELLAR="/home/linuxbrew/.linuxbrew/Cellar";
+  export HOMEBREW_REPOSITORY="/home/linuxbrew/.linuxbrew/Homebrew";
+  export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin${PATH+:$PATH}";
+  export MANPATH="/home/linuxbrew/.linuxbrew/share/man${MANPATH+:$MANPATH}:";
+  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:${INFOPATH:-}";
 elif [[ $OS = 'Darwin' ]]; then
-	IS_MAC=1
+  export PATH='/Applications/Visual Studio Code.app/Contents/Resources/app/bin':$PATH
+  export PATH='/Applications/Postgres.app/Contents/Versions/latest/bin':$PATH
 fi
 
 ## exports
@@ -30,8 +36,6 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.zsh/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
-export PATH='/Applications/Visual Studio Code.app/Contents/Resources/app/bin':$PATH
-export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 
 # Uncommented below when screwed up
 # PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -40,7 +44,7 @@ export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 alias f='fzf'
 alias r='less'
 alias e="nvim"
-alias c='ccat'
+alias c='bat'
 alias g='git'
 alias t='tmux'
 alias h="history"
@@ -67,9 +71,11 @@ export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=15
 source $ZSH/oh-my-zsh.sh
 
+## utils
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 ## work
 if [ -f $HOME/.zshrc-work ]; then
   source $HOME/.zshrc-work
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
