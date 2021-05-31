@@ -1,16 +1,16 @@
 [submodule "shell/custom/plugins/zsh-autosuggestions"]
-	path = shell/custom/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
-    branch = master
+  path = shell/custom/plugins/zsh-autosuggestions
+  url = git@github.com:zsh-users/zsh-autosuggestions.git
+  branch = master
 [submodule "shell/custom/themes/node-theme"]
-	path = shell/custom/themes/node-theme
-	url = git@github.com:skuridin/oh-my-zsh-node-theme.git
-    branch = master
+  path = shell/custom/themes/node-theme
+  url = git@github.com:skuridin/oh-my-zsh-node-theme.git
+  branch = master
 [submodule "shell/custom/plugins/zsh-syntax-highlighting"]
-	path = shell/custom/plugins/zsh-syntax-highlighting
-	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
-	branch = master
+  path = shell/custom/plugins/zsh-syntax-highlighting
+  url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+  branch = master
 [submodule "shell/custom/themes/lambda-gitster"]
-	path = shell/custom/themes/lambda-gitster
-	url = git@github.com:ergenekonyigit/lambda-gitster.git
-	branch = master
+  path = shell/custom/themes/lambda-gitster
+  url = git@github.com:ergenekonyigit/lambda-gitster.git
+  branch = master

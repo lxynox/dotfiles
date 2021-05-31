@@ -10,10 +10,8 @@
 # https://github.com/Homebrew
 
 tap 'homebrew/bundle'
-tap 'homebrew/science'
 tap 'homebrew/cask-fonts'
-# http://brew.sh/homebrew-science/
-tap 'caskroom/cask'
+tap 'homebrew/cask'
 
 # brew install <package>
 brew 'git'

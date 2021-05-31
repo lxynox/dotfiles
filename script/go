@@ -15,6 +15,7 @@ DOTFILES=(
   git/gitconfig.local
   formatter/prettierrc.js
   formatter/editorconfig
+  brew/Brewfile
 ) # Relative path to root dir
 
 go() {
