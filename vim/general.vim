@@ -14,14 +14,6 @@ set tw=0
 " https://stackoverflow.com/questions/2732267/vim-loses-undo-history-when-changing-buffers
 set hidden
 
-" window
-noremap <leader>h <C-w>s
-noremap <leader>v <C-w>v
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
 " swap files
 set noswapfile
 set nobackup
@@ -37,8 +29,6 @@ set tabstop=2
 set expandtab
 
 " completion
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 set wildmenu                                  " enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~                   " stuff to ignore when tab completing
 set wildignore+=*vim/backups*

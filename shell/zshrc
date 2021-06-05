@@ -53,7 +53,7 @@ alias k="kill -9"
 alias diff='icdiff'
 
 ## ohmyzsh
-ZSH_THEME="node"
+ZSH_THEME="refined"
 ZSH_CUSTOM=$DIR/custom
 
 plugins=(

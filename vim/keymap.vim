@@ -29,8 +29,16 @@ noremap <leader>q        :q<cr>
 noremap <leader>qq       :q!<cr>
 
 " resize
-noremap <silent> <leader>+ :exe "resize " . (winheight(0) * 3/2)<cr>
-noremap <silent> <leader>- :exe "resize " . (winheight(0) * 2/3)<cr>
-noremap <silent> <leader>> :exe "vertical res " . (winwidth(0) * 3/2)<cr>
-noremap <silent> <leader>< :exe "vertical res " . (winwidth(0) * 2/3)<cr>
+noremap <silent> <leader>+ :res +5<cr>
+noremap <silent> <leader>- :res -5<cr>
+noremap <silent> <leader>> :vertical res +10<cr>
+noremap <silent> <leader>< :vertical res -10<cr>
 
+" window
+noremap <leader>h <C-w>s
+noremap <leader>v <C-w>v
+
+" completion
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
