@@ -12,13 +12,14 @@ noremap  ^               0
 nnoremap <leader>cs      :colorscheme<space>
 
 " no hightlight
-nnoremap <C-L>           :nohl<cr><C-L>
+nnoremap <leader>l       :nohl<cr><C-L>
 
 " buffers
 nnoremap <leader>b       :buffers<cr>
 nnoremap <tab>           :bnext<cr>
 nnoremap <S-tab>         :bprevious<cr>
 nnoremap <C-x>           :bdelete<cr>
+nnoremap <C-x><C-x>      :bdelete!<cr>
 
 " save file
 nnoremap <C-S>           :update<cr>
@@ -34,7 +35,7 @@ noremap <silent> <leader>- :res -5<cr>
 noremap <silent> <leader>> :vertical res +10<cr>
 noremap <silent> <leader>< :vertical res -10<cr>
 
-" window
+" split window
 noremap <leader>h <C-w>s
 noremap <leader>v <C-w>v
 

@@ -13,6 +13,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'honza/vim-snippets'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'RyanMillerC/better-vim-tmux-resizer'
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
