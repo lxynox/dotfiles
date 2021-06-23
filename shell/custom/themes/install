@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-themes=$(find . -type f -name '*.zsh-theme')
-
-for theme in $themes; do
-    ln -s $theme $(basename $theme) >/dev/null 2>&1
-done

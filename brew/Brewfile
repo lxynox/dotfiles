@@ -9,49 +9,32 @@
 # Reference: https://github.com/Homebrew/homebrew-bundle
 # https://github.com/Homebrew
 
-cask_args appdir: '/Applications'
-
 tap 'homebrew/bundle'
-tap 'homebrew/science'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask'
 
 # brew install <package>
-brew 'cmake'
-brew 'ctags'
 brew 'git'
-brew 'mongodb'
-brew 'mysql'
-brew 'node'
-brew 'openssl'
-brew 'python'
-brew 'python3'
-brew 'ruby'
-brew 'readline'
-brew 'tree'
-brew 'zsh'
-brew 'yarn'
+brew 'nvim'
 brew 'tmux'
-brew 'ccat'
+brew 'fzf'
+brew 'ripgrep'
+brew 'bat'
+brew 'tree'
+brew 'icdiff'
 brew 'diff-so-fancy'
-brew 'wget'
-brew 'sl'
-# shell startup greetings
-brew 'cowsay'
-brew 'fortune'
 
-# http://brew.sh/homebrew-science/
-tap 'caskroom/cask'
+brew 'node'
+brew 'python'
+brew 'pyenv'
+brew 'rbenv'
+brew 'rustup'
 
 # https://caskroom.github.io/
-cask 'spotify'
-cask 'filezilla'
-cask 'skype'
-cask 'slack'
-cask 'hyper'
-cask 'alfred'
-cask 'dropbox'
-cask 'atom'
-cask 'opera'
-cask 'firefox'
-cask 'chromium'
-cask 'google-chrome'
+cask_args appdir: '/Applications'
 
+cask 'spotify'
+cask 'alfred'
+cask 'firefox'
+cask 'visual-studio-code'
+cask 'font-fira-code-nerd-font'

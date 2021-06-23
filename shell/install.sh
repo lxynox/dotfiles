@@ -1,10 +1,4 @@
-#!/bin/bash
-#
-# install oh-my-zsh for zsh
-
-echo ''
-echo '( zsh ) installing oh-my-zsh'
-echo ''
+info 'oh-my-zsh installing...'
 
 if hash curl >/dev/null
 then
@@ -17,5 +11,14 @@ else
     exit 1
 fi
 
-echo ''
-echo '[ ✔ ] installation of oh-my-zsh is complete 🍺'
+success 'oh-my-zsh installed'
+
+info 'custom themes setup...'
+
+themes=$(find . -type f -name '*.zsh-theme')
+
+for theme in $themes; do
+    ln -s $theme $(basename $theme) >/dev/null 2>&1
+done
+
+success 'custom themes setup complete'
