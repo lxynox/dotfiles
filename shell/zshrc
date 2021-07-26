@@ -22,7 +22,7 @@ fi
 ## exports
 export SHELL=/bin/zsh
 export LANG=en_US.UTF-8
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
+export JAVA_HOME="$(/usr/libexec/java_home)"
 
 ## functions
 fpath=(
@@ -72,14 +72,10 @@ export UPDATE_ZSH_DAYS=15
 source $ZSH/oh-my-zsh.sh
 
 ## work
-if [ -f $HOME/.zshrc-work ]; then
-  source $HOME/.zshrc-work
-fi
+[[ -f $HOME/.zshrc-work ]] && source $HOME/.zshrc-work
 
 ## powerlevel10k theme
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+[[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]] && source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh

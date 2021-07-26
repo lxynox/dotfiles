@@ -7,7 +7,6 @@ cd "$(dirname $0)/.."
 DOTFILES_ROOT=$(pwd -P)
 DOTFILES=(
   tmux/tmux.conf
-  tmux/tmux.conf.osx
   vim/vimrc
   shell/zshrc
   git/gitconfig
