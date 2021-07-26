@@ -22,7 +22,7 @@ fi
 ## exports
 export SHELL=/bin/zsh
 export LANG=en_US.UTF-8
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
 
 ## functions
 fpath=(
@@ -42,7 +42,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 ## aliases
 alias f='fzf'
-alias r='less'
 alias e="nvim"
 alias c='bat'
 alias g='git'
@@ -53,7 +52,7 @@ alias k="kill -9"
 alias diff='icdiff'
 
 ## ohmyzsh
-ZSH_THEME="refined"
+ZSH_THEME="refined" # powerlevel10k/powerlevel10k
 ZSH_CUSTOM=$DIR/custom
 
 plugins=(
@@ -62,6 +61,7 @@ plugins=(
   git
   pyenv
   rbenv
+  rails
   ssh-agent
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -76,3 +76,10 @@ if [ -f $HOME/.zshrc-work ]; then
   source $HOME/.zshrc-work
 fi
 
+## powerlevel10k theme
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

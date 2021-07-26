@@ -29,6 +29,7 @@ brew 'python'
 brew 'pyenv'
 brew 'rbenv'
 brew 'rustup'
+brew 'elixir'
 
 # https://caskroom.github.io/
 cask_args appdir: '/Applications'

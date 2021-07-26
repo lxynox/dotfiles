@@ -14,8 +14,8 @@ nmap <leader>f  <Plug>(coc-format-selected)
 nnoremap <silent> <leader>co  :<C-u>CocList outline<CR>
 
 " scroll popup menu
-nnoremap <nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-j>"
-nnoremap <nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-k>"
+nnoremap <nowait><expr> <leader>j coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-j>"
+nnoremap <nowait><expr> <leader>k coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-k>"
 
 let g:coc_global_extensions = [
       \'coc-elixir',
