@@ -7,7 +7,7 @@
 ```shell
 git clone https://github.com/lxynox/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-script/install && script/go
+script/install && script/bootstrap
 ```
 
 
