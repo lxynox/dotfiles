@@ -7,7 +7,8 @@
 ```shell
 git clone https://github.com/lxynox/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-script/install && script/bootstrap
+git submodule update --init --recursive
+script/bootstrap && script/install
 ```
 
 

@@ -1,15 +1,18 @@
 info 'oh-my-zsh installing...'
 
-if hash curl >/dev/null
+if [ ! -d $HOME/.oh-my-zsh/ ]
 then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-elif hash wget >/dev/null
-then
-    sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-else
-    echo "CLI tool curl & wget is missing, visit https://github.com/robbyrussell/oh-my-zsh for manual installation 🙃 "
-    exit 1
-fi
+  if hash curl >/dev/null
+  then
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  elif hash wget >/dev/null
+  then
+      sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+  else
+      echo "CLI tool curl & wget is missing, visit https://github.com/robbyrussell/oh-my-zsh for manual installation 🙃 "
+      exit 1
+  fi
+end
 
 success 'oh-my-zsh installed'
 

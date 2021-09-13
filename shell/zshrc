@@ -22,7 +22,7 @@ fi
 ## exports
 export SHELL=/bin/zsh
 export LANG=en_US.UTF-8
-export JAVA_HOME="$(/usr/libexec/java_home)"
+# export JAVA_HOME="$(/usr/libexec/java_home)"
 
 ## functions
 fpath=(
@@ -35,7 +35,10 @@ fpath=(
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.zsh/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$JAVA_HOME/bin:$PATH
+# export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$HOME/.pyenv/bin:$PATH
+
+eval "$(pyenv init --path)"
 
 # Uncommented below when screwed up
 # PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
