@@ -34,9 +34,10 @@ brew 'elixir'
 # https://caskroom.github.io/
 cask_args appdir: '/Applications'
 
+cask 'iterm2'
 cask 'spotify'
 cask 'alfred'
 cask 'firefox'
-case 'notion'
+cask 'notion'
 cask 'visual-studio-code'
 cask 'font-fira-code-nerd-font'
