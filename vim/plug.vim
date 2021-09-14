@@ -11,7 +11,7 @@ Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'honza/vim-snippets'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'RyanMillerC/better-vim-tmux-resizer'
@@ -34,5 +34,6 @@ Plug 'elmcast/elm-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'evanleck/vim-svelte'
+Plug 'tpope/vim-rails'
 
 call plug#end()

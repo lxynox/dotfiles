@@ -1,5 +1,5 @@
 let g:airline_theme='owo'
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline#extensions#default#layout = [
