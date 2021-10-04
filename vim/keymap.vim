@@ -1,4 +1,3 @@
-inoremap jj              <esc>
 noremap  Y               y$
 
 " reload vimrc

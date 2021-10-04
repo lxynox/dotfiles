@@ -35,5 +35,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'evanleck/vim-svelte'
 Plug 'tpope/vim-rails'
+Plug 'posva/vim-vue'
+Plug 'lepture/vim-jinja'
 
 call plug#end()
