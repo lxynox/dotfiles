@@ -23,6 +23,7 @@ brew 'bat'
 brew 'tree'
 brew 'icdiff'
 brew 'diff-so-fancy'
+brew 'fish'
 
 brew 'node'
 brew 'python'
